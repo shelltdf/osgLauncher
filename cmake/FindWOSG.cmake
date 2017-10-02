@@ -13,7 +13,7 @@
 
 #全局变量
 
-SET(WOSG_USE_STATIC_LIBRARY  ON  CACHE BOOL "")
+SET(WOSG_USE_STATIC_LIBRARY  OFF  CACHE BOOL "")
 set(WOSG_PLUGINS_DIR_NAME    "osgPlugins-3.4.0" )
 
 IF(MSVC)
@@ -404,6 +404,7 @@ FIND_PATH( WOSG_INCLUDE_DIR osg/Object
 			/usr/local/Include/
             ../../perbuild/include
             ${WOSG_DIR}/include
+            ${OSG_DIR}/include
 			) 
             
 #搜索OSG的include目录

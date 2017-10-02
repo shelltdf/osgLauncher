@@ -31,8 +31,8 @@ osg::Program* loadProgram(const std::string& vs_string, const std::string& fs_st
 
 void GLES_SS(osg::StateSet* ss)
 {
-	//#ifdef OSG_GLES2_AVAILABLE
-#if 1
+	#ifdef OSG_GLES2_AVAILABLE
+//#if 1
 
 	//GLES2
     //root->getOrCreateStateSet()->setAttributeAndModes(loadProgram(
@@ -184,7 +184,7 @@ void onCreate(
     viewer->getCamera()->setClearColor(osg::Vec4(1, 0, 0, 1));
     //viewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);
 
-#if 0
+#if 1
 
     //BOX
     osg::ShapeDrawable* sd = new osg::ShapeDrawable(
