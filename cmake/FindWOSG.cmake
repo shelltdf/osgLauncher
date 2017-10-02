@@ -34,7 +34,7 @@ IF(ANDROID OR NACL )
     SET(WOSG_STATIC_LIBRARY_PREFIX      "lib"  )
     SET(WOSG_STATIC_OT_LIBRARY_PREFIX   "lib"  )
     SET(WOSG_STATIC_LIBRARY_POSTFIX     ".a" )
-    set(WOSG_STATIC_PLUGINS_POSTFIX     ""  )
+    set(WOSG_STATIC_PLUGINS_POSTFIX     ".a"  )
 ENDIF(ANDROID OR NACL)
 
 
@@ -191,6 +191,7 @@ MACRO(WOSG_SETUP_OPENTHREADS_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/static/bin
 						/usr/local/lib/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 		#追加
@@ -210,6 +211,7 @@ MACRO(WOSG_SETUP_OPENTHREADS_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/static/bin
 						/usr/local/lib/
+/usr/local/lib64/
 						) 
 		#追加
         # if( WOSG_STATIC_OPENTHREADS_LIBRARY_DEBUG )
@@ -238,6 +240,7 @@ MACRO(WOSG_SETUP_OPENTHREADS_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/dynamic/lib
 						/usr/local/lib/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 		#追加
@@ -250,6 +253,7 @@ MACRO(WOSG_SETUP_OPENTHREADS_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/dynamic/lib
 						/usr/local/lib/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 		#追加
@@ -290,6 +294,7 @@ MACRO(WOSG_SETUP_OSG_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/static/bin
 						/usr/local/bin/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 		#追加
@@ -313,6 +318,7 @@ MACRO(WOSG_SETUP_OSG_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/static/bin
 						/usr/local/lib/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 
@@ -351,6 +357,7 @@ MACRO(WOSG_SETUP_OSG_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/dynamic/lib
 						/usr/local/lib/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 		#追加
@@ -371,6 +378,7 @@ MACRO(WOSG_SETUP_OSG_LIBRARIES)
 						"C:/Program Files (x86)/OpenSceneGraph/lib"
 						# $ENV{OSGDIR}/build/dynamic/lib
 						/usr/local/lib/
+/usr/local/lib64/
                         ${WOSG_INCLUDE_BUILD_DIR}/../lib/
 						) 
 
